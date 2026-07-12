@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortia Agency</title>
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo-01-light.svg">
+
+    <!-- Google Fonts (deferred) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <!-- Font Awesome (deferred) -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>  
+    <!-- fontello font css -->
+    <link rel="stylesheet" href="assets/css/plugins/fontello-enqueue.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/plugins/fontello-icons.css" media="print" onload="this.media='all'">
+
+    <!-- core css - needed for initial page load -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- component css - deferred -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    </noscript>
+
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery-bundle.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/plugins/lightgallery-bundle.min.css">
+    </noscript>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="assets/images/preloader-dark.png" alt="Loading...">
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <button id="themeBtn"><i class="far fa-moon"></i></button>
+
+    <div class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- search-popup -->
+    <div class="search-popup" data-popup="1">
+        <div class="search-popup-content">
+            <form>
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Type Your Search..." required>
+            </form>
+            <button type="button" class="close-popup"></button>
+        </div>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <div class="overlay" id="overlay"></div>
+        <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa fa-close"></i> close</a>
+        <div class="menu-content">
+            <a class="logo" href="index14.html">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+            <div class="sidebar-menu">
+                <h4 class="title">contacts</h4>
+                <p>USA, New York - 1060 <br> Str. First Avenue 1</p>
+                <a href="tel:+2347067526407" class="nmbr">+234 706 752 6407</a>
+                <a href="mailto:cortiatech@gmail.com" class="email">cortiatech@gmail.com</a>
+                <a href="contact.html" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <ul class="social-icon">
+                <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/" title="X (Twitter)"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.youtube.com/" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div data-menu="mobileMenu" class="side-menu2">
+        <div class="menu-btns">
+            <a href="#" class="popup-search" data-popup="1"><i class="fa fa-search"></i></a>
+            <button id="mobileCloseBtn2" class="close-btn"></button>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Cortia Stack</a>
+                <ul>
+                    <li><a href="index1.html">CoreSure</a></li>
+                    <li><a href="index2.html">LandCerta</a></li>
+                    <li><a href="index4.html">Rental Verify</a></li>
+                    <li><a href="index5.html">OIS</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Company</a>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li class="sub-menu">
+                        <a href="#">Team</a>
+                        <ul>
+                            <li><a href="team.html">Our team</a></li>
+                            <li><a href="team-single.html">Team Single</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+                <ul>
+                    <li><a href="blog.html">Blog Classic</a></li>
+                    <li><a href="blog2.html">Blog Grid</a></li>
+                    <li><a href="blog-single.html">Blog Single</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+        <div class="menu-contact">
+            <span>Contacts</span>
+            <a href="tel:+2347067526407" class="nmbr">+234 706 752 6407</a>
+            <a href="mailto:cortiatech@gmail.com" class="gmail">cortiatech@gmail.com</a>
+        </div>
+        <div class="menu-links">
+            <span>Follow us:</span>
+            <ul class="social-icon">
+                <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/" title="X (Twitter)"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.youtube.com/" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <a href="contact.html" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
+                <span>Get in Touch</span>
+            </a>
+        </div>
+    </div>
+    <div class="overlay2"></div>
+
+    <!-- Sticky Header -->
+    <header class="sticky-active v14">
+        <div class="header-menu-area">
+            <div class="row gx-20 align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="header-logo">
+                        <a href="javascript:void(0)" class="menu-toggle"></a>
+                        <a href="index14.html">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <nav class="main-menu menu-style1 v4">
+                        <ul>
+                            <li>
+                                <a class="active" href="index14.html">
+                                    <span class="menu-item">Cortia Stack</span>
+                                    <span class="menu-item2">Cortia Stack</span>
+                                </a>
+                                <ul class="mega-sub-menu">
+                                    <li class="mega-menu-column">
+                                        <ul>
+                                            <li><a href="index1.html">Core Sure</a></li>
+                                            <li><a href="index2.html">LandCerta</a></li>
+                                            <li><a href="index4.html">Rental Verify</a></li>
+                                            <li><a href="index5.html">OIS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mega-menu-column">
+                                        <a class="darkModeTriggerImg" href="index14.html"><img src="assets/images/event/dark-version.png" alt="AI Agency & Technology HTML Template"></a>
+                                        <a class="darkModeTriggerImg2" href="index14.html"><img src="assets/images/event/light-version.png" alt="AI Agency & Technology HTML Template"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="menu-item">Company</span>
+                                    <span class="menu-item2">Company</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-us.html">About us</a></li>
+                                    <li>
+                                        <a href="team.html">Team</a>
+                                        <ul class="sub-menu v1">
+                                            <li><a href="team.html">Creative team</a></li>
+                                            <li><a href="team-single.html">Team Single</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="blog.html">
+                                    <span class="menu-item">Blog</span>
+                                    <span class="menu-item2">Blog</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">Blog Classic</a></li>
+                                    <li><a href="blog2.html">Blog Grid</a></li>
+                                    <li><a href="blog-single.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <span class="menu-item">Contacts</span>
+                                    <span class="menu-item2">Contacts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-auto d-none d-xl-block">
+                    <div class="btn-box">
+                        <!--<a href="tel:+2347067526407" class="header-contact11">+234 706 752 6407</a>-->
+                        <a href="#" class="popup-search" data-popup="1"><i class="fa fa-search"></i></a>
+                        <a class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded" href="contact.html">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="hamburger popup-menu" data-menu="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- End Sticky Header -->
+
+    <!--======== Header ========-->
+    <header class="vs-header14">
+        <div class="container2 position-relative">
+            <div class="header-menu-area">
+                <div class="row gx-20 align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="header-logo">
+                            <a href="javascript:void(0)" class="menu-toggle"></a>
+                            <a href="index1.html">
+                                <img src="assets/images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class="main-menu menu-style1 v4">
+                            <ul>
+                                <li>
+                                    <a class="active" href="index.html">
+                                        <span class="menu-item">Cortia Stack</span>
+                                        <span class="menu-item2">Cortia Stack</span>
+                                    </a>
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-column">
+                                            <ul>
+                                                <li><a href="index1.html">Core Sure- Build with Confidence</a></li>
+                                                <li><a href="index2.html">LandCerta-- Secure Land. Assured Future</a></li>
+                                                <li><a href="index4.html">Rental Verify-- Verify. Rent. Relax</a></li>
+                                                <li><a href="index5.html">OIS-- Optimized Information Solutions</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-column">
+                                            <a class="darkModeTriggerImg" href="index14.html"><img src="assets/images/event/dark-version.png" alt="AI Agency & Technology HTML Template"></a>
+                                            <a class="darkModeTriggerImg2" href="index14.html"><img src="assets/images/event/light-version.png" alt="AI Agency & Technology HTML Template"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="menu-item">Company</span>
+                                        <span class="menu-item2">Company</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="about-us.html">About us</a></li>
+                                        <li>
+                                            <a href="team.html">Team</a>
+                                            <ul class="sub-menu v1">
+                                                <li><a href="team.html">Creative team</a></li>
+                                                <li><a href="team-single.html">Team Single</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="blog.html">
+                                        <span class="menu-item">Blog</span>
+                                        <span class="menu-item2">Blog</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog Classic</a></li>
+                                        <li><a href="blog2.html">Blog Grid</a></li>
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <span class="menu-item">Contacts</span>
+                                        <span class="menu-item2">Contacts</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-auto d-none d-xl-block">
+                        <div class="btn-box">
+                            <!--<a href="tel:+2347067526407" class="header-contact11">+234 706 752 6407</a>-->
+                            <a href="#" class="popup-search" data-popup="1"><i class="fa fa-search"></i></a>
+                            <a class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded" href="contact.html">
+                                <span>Get in Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="hamburger popup-menu" data-menu="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--======== / Header ========-->
+
+    <!-- hero-style14 -->
+    <section class="hero-style14">
+        <div class="container-fluid">
+            <div class="row end">
+                <div class="col-xl-7 col-lg-12">
+                    <div class="hero-title">
+                        <h3 class="gradient-title14">Powering Next-Gen Industrial <span><b>Infrastructure</b></span> for Africa</h3>
+                    </div>
+                </div>
+                <div class="col-xl-1"></div>
+                <div class="col-xl-4 col-lg-12">
+                    <div class="hero-content14">
+                        <p>We build trusted technology platforms that simplify land administration, strengthen compliance, enable smarter operations, and accelerate sustainable infrastructure development throughout Africa.
+                        </p>
+                        <a class="ibt-btn ibt-btn-secondary" href="index14.html" target="_blank">
+                            <span>Built for Africa</span>
+                            <i class="icon-arrow-top"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End hero-style14 -->
+
+    <!-- service-sec20 -->
+    <section class="service-sec20">
+        <div class="container2">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="ser-info20">
+                        <div class="ser-card20_card1">
+                            <img src="assets/images/icon/icon14-1.svg" alt="AI Agency & Technology HTML Template">
+                            <h4 class="title">Infrastructure Intelligence for a Smarter Africa</h4>
+                            <p>Connected. Verified. Secure.</p>
+                        </div>
+                        <div class="ser-card20_card2">
+                            <img src="assets/images/icon/icon14-2.svg" alt="AI Agency & Technology HTML Template">
+                            <h4 class="title">Infrastructure</h4>
+                            <span>You Can Trust</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="ser-info20">
+                        <div class="ser-card20_card3">
+                            <img src="assets/images/service/front1.png" alt="AI Agency & Technology HTML Template">
+                            <!--<h4 class="title">A lot of different styles and colors for one AI Gadget</h4>-->
+                        </div>
+                        <div class="ser-card20_card4">
+                            <img src="assets/images/service/back2.jpeg" alt="AI Agency & Technology HTML Template">
+                            <!--<h4 class="title">360° Spatial Awareness &ndash; Complete freedom to explore and interact in a virtual space.</h4>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
+                    <div class="ser-card20_card5">
+                        <img src="assets/images/service/africa.png" alt="AI Agency & Technology HTML Template">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End service-sec20 -->
+
+    <!-- neural-playground6 -->
+    <section class="neural-playground6 ibt-section-gap">
+        <div class="container2">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="neural-img6">
+                        <img src="assets/images/layers/layer6.png" alt="AI Agency & Technology HTML Template" class="one">
+                        <img src="assets/images/layers/layer6-1.png" alt="AI Agency & Technology HTML Template" class="two">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="neural-content">
+                        <h2 class="gradient-title">Building Africa's Digital <span>Infrastructure</span> for Tomorrow</h2>
+                        <div class="swiper brand">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand1.png" alt="AI Agency & Technology HTML Template"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand2.png" alt="AI Agency & Technology HTML Template"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand3.png" alt="AI Agency & Technology HTML Template"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand4.png" alt="AI Agency & Technology HTML Template"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand1.png" alt="AI Agency & Technology HTML Template"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand2.png" alt="AI Agency & Technology HTML Template"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand3.png" alt="AI Agency & Technology HTML Template"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand4.png" alt="AI Agency & Technology HTML Template"></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End neural-playground6 -->
+
+    <!-- project-sec7 -->
+    <section class="project-sec7">
+        <div class="container2">
+            <div class="video-banner3">
+                <img src="assets/images/service/cortia1.jpeg" alt="AI Agency & Technology HTML Template">
+                <div class="video-banner-content7">
+                    <!--<img src="assets/images/logo4.svg" alt="AI Agency & Technology HTML Template">-->
+                    <!--<h4 class="title">Future is here</h4>-->
+                </div>
+                <div class="ser-video-box">
+                    <a href="#" class="video-popup" data-video="https://www.youtube.com/embed/aircAruvnKk">
+                        <i class="fa fa-play"></i> Watch Video
+                    </a>
+                </div>
+            </div>
+            <div class="row" id="lightgallery">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="project-block7" data-src="assets/images/service/4 subcompany.png">
+                                <img src="assets/images/service/sub.jpeg" alt="Company ">
+                                <div class="architecture"><span><a href="#">Company</a></span></div>
+                            </div>
+                            <div class="custom-cursor">Zoom In</div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="project-block7 v3" data-src="assets/images/service/back2.jpeg">
+                                <img src="assets/images/service/back2.jpeg" alt="Company ">
+                                <div class="architecture"><span><a href="#">Company</a></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="project-block7 mb-0 v2" data-src="assets/images/service/front1.png">
+                        <img src="assets/images/service/front1.png" alt="Company">
+                        <div class="architecture"><span><a href="#">Company</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End project-sec7 -->
+
+    <!-- about-us-sec5 -->
+    <section class="about-us-sec5 ibt-section-gap">
+        <div class="container">
+            <div class="sec-title">
+                <h2 class="title animated-heading"> Building the Future of Infrastructure Intelligence Across Africa
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="about-title5">
+                        <span class="sub-title">/ about CORTIA /</span>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="about-content5">
+                        <p><span>CORTIA is a technology company dedicated to transforming Africa's infrastructure through intelligent digital solutions.
+                             We develop secure platforms that empower governments, businesses, developers, and institutions to make smarter, faster, and 
+                             data-driven decisions.
+                         Our ecosystem combines geospatial intelligence, land verification, property technology, business compliance, and operational analytics into one connected platform designed for the future. By integrating advanced technologies with local expertise, CORTIA is creating trusted digital infrastructure that drives transparency, efficiency, and sustainable growth across the continent.
+                        </p>
+                        <a class="ibt-btn ibt-btn-outline" href="index14.html">
+                            <span>Explore CORTIA Stack</span>
+                            <i class="icon-arrow-top"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about-us-sec5 -->
+
+    <!-- feature-sec8 -->
+    <section class="feature-sec8 ibt-section-gapBottom">
+        <div class="container5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-img8">
+                        <div class="empty4"></div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <img src="assets/images/service/bbb.png" alt="AI Agency & Technology HTML Template">
+                                <h4 class="title">Cortia</h4>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <img src="assets/images/feature/feature-15-1.png" alt="AI Agency & Technology HTML Template">
+                                <h4 class="title">Cortia</h4>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <img src="assets/images/feature/feature-15-2.png" alt="AI Agency & Technology HTML Template">
+                                <h4 class="title">Cortia</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-tabs8">
+                        <div class="sec-title">
+                            <span class="sub-title">how it works</span>
+                            <h2 class="title animated-heading">Discover the Technologies Powering Africa's Digital Infrastructure</h2>
+                        </div>
+                        <ul class="nav nav-tabs8" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">
+                                    <div class="feature-block8">
+                                        <img src="assets/images/feature/feature8-1.svg" alt="AI Agency & Technology HTML Template">
+                                        <h4 class="title">01. Verify Land with Confidence</h4>
+                                        <p>LandCerta provides secure digital land verification, geospatial intelligence, and property documentation that help governments, investors, and developers make informed decisions.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                    <div class="feature-block8">
+                                        <img src="assets/images/feature/feature8-2.svg" alt="AI Agency & Technology HTML Template">
+                                        <h4 class="title">02. Build Trust in Property Rentals</h4>
+                                        <p>Rental Verify simplifies tenant and property verification by providing trusted screening, identity validation, and rental intelligence for landlords and property managers.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a href="#" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                    <div class="feature-block8">
+                                        <img src="assets/images/feature/feature8-3.svg" alt="AI Agency & Technology HTML Template">
+                                        <h4 class="title">03. Monitor Operations in Real Time</h4>
+                                        <p>OIS delivers operational intelligence through live dashboards, analytics, and monitoring tools that improve infrastructure performance, resource management, and decision-making.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="ibt-btn ibt-btn-outline" href="index14.html">
+                            <span>Explore Our Ecosystem</span>
+                            <i class="icon-arrow-top"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End feature-sec8 -->
+
+    <!-- feature-sec9 -->
+    <section class="feature-sec9">
+        <div class="container3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feature-content9">
+                        <div class="sec-title">
+                            <span class="sub-title">how it works</span>
+                            <h2 class="title animated-heading">A Unified Ecosystem for Building Africa's Digital Infrastructure
+                            </h2>
+                            <p>CORTIA brings together intelligent platforms that simplify land administration, property verification, compliance management, operational intelligence, and digital commerce. Our integrated ecosystem enables governments, businesses, developers, and institutions to make faster, smarter, and more secure decisions that accelerate Africa's infrastructure and economic growth.
+                            </p>
+                        </div>
+                        <div class="feature-block9">
+                            <span class="sub-title">01</span>
+                            <h4 class="title">Verify & Secure Assets</h4>
+                            <p>With LandCerta, users can verify land ownership, access trusted geospatial data, authenticate property records, and reduce the risks associated with land transactions.
+                            </p>
+                        </div>
+                        <div class="feature-block9">
+                            <span class="sub-title">02</span>
+                            <h4 class="title">Build Trust Through Digital Verification</h4>
+                            <p>Rental Verify and CoreSure streamline tenant screening, identity validation, business verification, and regulatory compliance helping organizations operate with greater confidence and transparency.
+                            </p>
+                        </div>
+                        <div class="feature-block9">
+                            <span class="sub-title">03</span>
+                            <h4 class="title">Monitor, Analyze & Scale</h4>
+                            <p>OIS provides real-time operational intelligence, while Oja connects businesses to digital markets. Together, they deliver actionable insights, improve efficiency, and support sustainable infrastructure development across Africa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-img9">
+                        <div class="empty4"></div>
+                        <img src="assets/images/service/background.png" alt="AI Agency & Technology HTML Template">
+                        <div class="ser-video-box">
+                            <a href="#" class="video-popup" data-video="https://www.youtube.com/embed/aircAruvnKk">
+                                <i class="fa fa-play"></i> Watch Video
+                            </a>
+                        </div>
+                        <h4 class="title">Interactive</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End feature-sec9 -->
+
+    <!-- service-banner -->
+    <section class="service-banner ibt-section-gapTop">
+        <div class="container2">
+            <div class="ser-banner-card">
+                <img src="assets/images/service/longbb.png" alt="AI Agency & Technology HTML Template">
+                <img src="assets/images/service/ser-icon21.svg" alt="AI Agency & Technology HTML Template" class="ser-banner-icon">
+                <div class="ser-banner-content">
+                    <!--<h4 class="title">Cross-Platform Compatibility</h4>
+                    <p>Available on iOS and Android devices, ensuring a consistent experience.</p>-->
+                </div>
+                <a href="#" class="ser-btn">
+                    <i class="icon fontello icon-button-arrow"></i>
+                    <i class="icon2 fontello icon-button-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End service-banner -->
+
+    <!-- faq-sec -->
+    <section class="faq-sec ibt-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="faq-img">
+                        <img src="assets/images/layers/layer2.png" alt="AI Agency & Technology HTML Template">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="faq-content">
+                        <div class="sec-title">
+                            <span class="sub-title">faq</span>
+                            <h2 class="title animated-heading">Everything You Need to Know About CORTIA</h2>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is CORTIA?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        CORTIA is an African technology company building intelligent digital infrastructure solutions that improve how governments,
+                                         businesses, and communities manage land, verify information, monitor operations, and drive economic growth. Our ecosystem 
+                                         combines innovative technologies to create secure, transparent, and efficient digital services across Africa.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What solutions does CORTIA provide?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        CORTIA offers a growing ecosystem of digital platforms, including LandCerta for land verification,
+                                         Rental Verify for tenant and property verification, CoreSure for compliance and business verification,
+                                          OIS for operational intelligence, and Oja for digital commerce. Together, these solutions simplify complex 
+                                          processes and enable smarter decision-making..
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Who can use CORTIA's solutions?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Our platforms are designed for governments, businesses, real estate developers, financial institutions, 
+                                        property managers, enterprises, NGOs, and individuals seeking trusted digital infrastructure solutions.
+                                         Whether you're managing land, verifying identities, monitoring operations, or growing your business, 
+                                         CORTIA provides the tools you need.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-0">
+                                <h2 class="accordion-header" id="headingfour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                       Is CORTIA built for Africa?
+                                    </button>
+                                </h2>
+                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes. Every CORTIA solution is designed with Africa's unique infrastructure challenges and opportunities in mind. 
+                                        Our mission is to build scalable technologies that support sustainable development, digital transformation, and 
+                                        economic growth across the continent.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="ibt-btn ibt-btn-outline" href="index14.html">
+                            <span>Learn More About the CORTIA Ecosystem</span>
+                            <i class="icon-arrow-top"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End faq-sec -->
+
+    <!-- blog-sec -->
+    <section class="blog-sec ibt-section-gap">
+        <div class="container">
+            <div class="title-area">
+                <div class="row end">
+                    <div class="col-lg-7">
+                        <div class="sec-title mb-0">
+                            <span class="sub-title">blog</span>
+                            <h2 class="title animated-heading">Exploring the world
+                               Intelligent Infrastructure with Cortia blogging
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sec-btn-box">
+                            <a class="ibt-btn ibt-btn-outline" href="blog.html">
+                                <span>More articles</span>
+                                <i class="icon-arrow-top"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <a href="blog-single.html"><img src="assets/images/blog/blog1-1.png" alt="AI Agency & Technology HTML Template"></a>
+                            <span class="blog-meta">24 AUG. 2024 / Ann Miller</span>
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="title"><a href="blog-single.html">How can I get started with Artificial
+                                    Intelligence for my business?</a>
+                            </h4>
+                            <span>/ AI / Business /</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <a href="blog-single.html"><img src="assets/images/blog/blog1-2.png" alt="AI Agency & Technology HTML Template"></a>
+                            <span class="blog-meta">24 AUG. 2024 / Ann Miller</span>
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="title"><a href="blog-single.html">AI and Robotics: Advancing Automation
+                                    and Human-Robot Collaboration</a>
+                            </h4>
+                            <span>/ AI / Business /</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card mb-0">
+                        <div class="blog-img">
+                            <a href="blog-single.html"><img src="assets/images/blog/blog1-3.png" alt="AI Agency & Technology HTML Template"></a>
+                            <span class="blog-meta">24 AUG. 2024 / Ann Miller</span>
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="title"><a href="blog-single.html">How Natural Language Processing
+                                    is revolutionizing Text Analysis</a>
+                            </h4>
+                            <span>/ AI / Business /</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End blog-sec -->
+
+    <!-- partners-sec -->
+    <section class="partners-sec ibt-section-gapBottom">
+        <div class="container">
+            <div class="sec-title">
+                <span class="sub-title">partners</span>
+                <h2 class="title animated-heading">Our trusted collaborators in progress and success</h2>
+            </div>
+            <div class="brand-sec2">
+                <div class="swiper brand2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand1.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand2.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand3.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand4.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand6.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand5.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand1.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand2.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand3.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand4.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand6.png" alt="AI Agency & Technology HTML Template"></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand5.png" alt="AI Agency & Technology HTML Template"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End partners-sec -->
+
+    <!-- footer-style5 -->
+    <footer class="footer-style5">
+        <div class="footer-top5">
+            <div class="container">
+                <div class="footer-content5">
+                    <h2 class="title">Stay updated with the latest news and insights&mdash;subscribe now!</h2>
+                    <div class="form-box5">
+                        <form method="get" class="footer-form5">
+                            <input type="email" placeholder="Email" required>
+                            <button class="ibt-btn ibt-btn-outline" type="submit">
+                                <span>Subscribe</span>
+                                <i class="icon-arrow-top"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-area5 ibt-section-gapTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="about-widget5 footer-widget">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo2.svg" alt="AI Agency & Technology HTML Template">
+                            </div>
+                            <ul class="social-icon">
+                                <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://x.com/" title="X (Twitter)"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.youtube.com/" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="footer-menu5">
+                            <div class="contact-widget5 footer-widget">
+                                <h4 class="widget-title">Contacts</h4>
+                                <a href="tel:+2347067526407" class="nmbr">+234 706 752 6407</a>
+                                <a href="mailto:cortiatechnology@gmail.com" class="gmail">cortiatechnology@gmail.com</a>
+                            </div>
+                            <div class="footer-links5 footer-widget">
+                                <h4 class="widget-title">Company</h4>
+                                <ul>
+                                    <li><a href="about-us.html">About</a></li>
+                                    <li><a href="#">Expertise</a></li>
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">News & Media</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                    <li><a href="contact.html">Contacts</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links5 footer-widget">
+                                <h4 class="widget-title">Services</h4>
+                                <ul>
+                                    <li><a href="#">AI Model Deployment</a></li>
+                                    <li><a href="#">Intelligent Automation</a></li>
+                                    <li><a href="#">Data Science Consulting</a></li>
+                                    <li><a href="#">Predictive Analytics</a></li>
+                                    <li><a href="#">Value Added Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-botom5">
+            <div class="container">
+                <div class="footer-box5">
+                    <p><a href="#">@Cortia</a> 2026. All rights reserved.</p>
+                    <span><a href="#">Terms</a> of use &middot; Privacy &middot; Environmental Policy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer-style5 -->
+
+    <!-- Scroll Button -->
+    <button id="scrollBtn" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/vendor/lightgallery.min.js" defer></script>
+    <script src="assets/js/vendor/lg-zoom.min.js" defer></script>
+    <script src="assets/js/vendor/lg-thumbnail.min.js" defer></script>
+    <script src="assets/js/vendor/lenis.min.js" defer></script>
+    <script src="assets/js/vendor/gsap.min.js" defer></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js" defer></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
