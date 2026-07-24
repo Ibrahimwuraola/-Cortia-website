@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-><meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cortia Technologies</title>
+    <title>OIS — CORTIA's Digital Infrastructure & Managed Technology Platform</title>
 
-    <!-- Preconnect for faster font loading (PUT THIS FIRST!) -->
+    <!-- Preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo-01-light.svg">
 
-    <!-- Google Fonts (deferred) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
-    <!-- Load Font Awesome CSS asynchronously -->
+    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-<noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+
     <!-- fontello font css -->
     <link rel="stylesheet" href="assets/css/plugins/fontello-enqueue.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/css/plugins/fontello-icons.css" media="print" onload="this.media='all'">
 
-    <!-- others css -->
-    <!-- Keep these normal - needed for initial page load -->
+    <!-- Primary Styles -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Make these async - only used for specific components -->
+    <!-- Dynamic Components CSS -->
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
@@ -41,6 +43,84 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/plugins/lightgallery-bundle.min.css">
     </noscript>
+
+    <!-- Premium Futuristic UI Overlay Engine -->
+    <style>
+        :root {
+            --glow-cyan: #00f2fe;
+            --glow-blue: #4facfe;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-muted: #b0bec5;
+        }
+        body.dark {
+            background-color: #0b0f19 !important;
+        }
+        .premium-glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .premium-glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--glow-cyan);
+            box-shadow: 0 12px 40px 0 rgba(0, 242, 254, 0.15);
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #fff 30%, var(--glow-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-icon-box {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: rgba(0, 242, 254, 0.05);
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            color: var(--glow-cyan);
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.1);
+            margin-bottom: 20px;
+        }
+        .feature-block16 {
+            background: rgba(255, 255, 255, 0.02) !important;
+            border: 1px solid var(--glass-border) !important;
+            border-radius: 16px !important;
+            padding: 35px 25px !important;
+            transition: all 0.3s ease !important;
+        }
+        .feature-block16:hover {
+            border-color: var(--glow-blue) !important;
+            box-shadow: 0 0 25px rgba(79, 172, 254, 0.15) !important;
+        }
+        .tab-content-wrapper {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 25px;
+        }
+        .matrix-pill-negative {
+            background: rgba(239, 83, 80, 0.05);
+            border-left: 3px solid #ef5350;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        .matrix-pill-positive {
+            background: rgba(102, 187, 106, 0.05);
+            border-left: 3px solid #66bb6a;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
 
 <body class="dark">
@@ -51,19 +131,32 @@
                 <img src="assets/images/preloader-dark.png" alt="Loading...">
             </div>
         </div>
-        <!-- End Preloader -->
+        
+        <!-- Video Modal Overlay -->
         <div class="video-modal">
             <div class="video-modal-content">
                 <span class="close-btn">&times;</span>
                 <iframe allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
-        <!-- search-popup -->
+
+         <!-- Search Popup -->
         <div class="search-popup" data-popup="1">
             <div class="search-popup-content">
                 <form>
                     <button type="submit"><i class="fa fa-search"></i></button>
-                    <input type="text" placeholder="Type Your Search..." required>
+                    <input type="text" placeholder="Search Rental Property or ID..." required>
+                </form>
+                <button type="button" class="close-popup"></button>
+            </div>
+        </div>
+
+      <!-- Search Popup -->
+        <div class="search-popup" data-popup="1">
+            <div class="search-popup-content">
+                <form>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search Property or Verification ID..." required>
                 </form>
                 <button type="button" class="close-popup"></button>
             </div>
@@ -71,22 +164,22 @@
 
         <!-- Side Menu -->
         <div class="side-menu" id="sideMenu">
-            <div class="overlay" id="overlay"></div>
-            <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa fa-close"></i> close</a>
-            <div class="menu-content">
-                <a class='logo' href='index.html'>
-                    <img src="assets/images/logo2.svg" alt="logo">
+        <div class="overlay" id="overlay"></div>
+        <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa fa-close"></i> close</a>
+        <div class="menu-content">
+            <a class='logo' href='index.html'>
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+            <div class="sidebar-menu">
+                <h4 class="title">contacts</h4>
+                <!--<p>USA, New York - 1060 <br> Str. First Avenue 1</p>
+                <a href="#" title="" class="nmbr"> +234 706 752 6407</a>-->
+                <a href="#" title="" class="nmbr"> +234 706 752 6407</a>
+                <a href="mailto:cortiatechnology@gmail.com" class="email">cortiatechnology@gmail.com</a>
+                <a href="#" title="" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
+                    <span>Get in Touch</span>
                 </a>
-                <div class="sidebar-menu">
-                    <h4 class="title">contacts</h4>
-                    <p>USA, New York - 1060 <br> Str. First Avenue 1</p>
-                    <a href="tel:+13685678954" class="nmbr">800 100 975 20 34</a>
-                    <a href="tel:8003508431" class="nmbr">+ (123) 1800-234-5678</a>
-                    <a href="mailto:aiero@mail.co" class="email">aiero@mail.co</a>
-                    <a href="#" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
-                        <span>Get in Touch</span>
-                    </a>
-                </div>
+            </div>
                 <ul class="social-icon">
                     <li><a href="www.facebook.html"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a></li>
@@ -96,7 +189,7 @@
             </div>
         </div>
 
-       
+         
     <!-- Mobile Menu -->
     <div data-menu="mobileMenu" class="side-menu2">
         <div class="menu-btns">
@@ -107,10 +200,10 @@
             <li>
                 <a href="#">Cortia Stack</a>
                 <ul>
-                    <li><a href="index1.html">CoreSure</a></li>
-                    <li><a href="index2.html">LandCerta</a></li>
-                    <li><a href="index4.html">Rental Verify</a></li>
-                    <li><a href="index5.html">OIS</a></li>
+                                          <li><a href="index1.html">Core Sure — Build with Confidence</a></li>
+                                                <li><a href="index2.html">LandCerta —  Secure Land. Assured Future</a></li>
+                                                <li><a href="index3.html">Rental Verify —  Verify. Rent. Relax</a></li>
+                                                <li><a href="index4.html">OIS — Managed Infrastructure</a></li>
                 </ul>
             </li>
             <li>
@@ -163,7 +256,7 @@
                 <div class="col-auto">
                     <div class="header-logo">
                         <a href="javascript:void(0)" class="menu-toggle"></a>
-                        <a href="index1.html">
+                        <a href="index14.html">
                             <img src="assets/images/logo.png" alt="logo">
                         </a>
                     </div>
@@ -172,7 +265,7 @@
                     <nav class="main-menu menu-style1 v4">
                         <ul>
                             <li>
-                                <a class="active" href="index.html">
+                                <a class="active" href="index14.html">
                                     <span class="menu-item">Cortia Stack</span>
                                     <span class="menu-item2">Cortia Stack</span>
                                 </a>
@@ -180,9 +273,9 @@
                                     <li class="mega-menu-column">
                                         <ul>
                                             <li><a href="index1.html">Core Sure</a></li>
-                                            <li><a href="index2.html">LandCerta</a></li>
-                                            <li><a href="index4.html">Rental Verify</a></li>
-                                            <li><a href="index5.html">OIS</a></li>
+                                                <li><a href="index2.html">LandCerta</a></li>
+                                                <li><a href="index3.html">Rental Verify</a></li>
+                                                <li><a href="index4.html">OIS</a></li>
                                         </ul>
                                     </li>
                                     <li class="mega-menu-column">
@@ -254,7 +347,7 @@
                     <div class="col-auto">
                         <div class="header-logo">
                             <a href="javascript:void(0)" class="menu-toggle"></a>
-                            <a href="index1.html">
+                            <a href="index14.html">
                                 <img src="assets/images/logo.png" alt="logo">
                             </a>
                         </div>
@@ -263,21 +356,17 @@
                         <nav class="main-menu menu-style1 v4">
                             <ul>
                                 <li>
-                                    <a class="active" href="index.html">
+                                    <a class="active" href="index14.html">
                                         <span class="menu-item">Cortia Stack</span>
                                         <span class="menu-item2">Cortia Stack</span>
                                     </a>
                                     <ul class="mega-sub-menu">
                                         <li class="mega-menu-column">
                                             <ul>
-                                                <li><a href="index1.html">Core Sure</a></li>
-                                                <p>Build with Confidence</p>
-                                                <li><a href="index2.html">LandCerta</a></li>
-                                                <p>Secure Land. Assured Future</p>
-                                                <li><a href="index4.html">Rental Verify</a></li>
-                                                <p>Verify. Rent. Relax</p>
-                                                <li><a href="index5.html">OIS</a></li>
-                                                <p>Optimized Information Solutions</p>
+                                               <li><a href="index1.html">Core Sure — Build with Confidence</a></li>
+                                                <li><a href="index2.html">LandCerta —  Secure Land. Assured Future</a></li>
+                                                <li><a href="index3.html">Rental Verify —  Verify. Rent. Relax</a></li>
+                                                <li><a href="index4.html">OIS — Managed Infrastructure</a></li>
                                             </ul>
                                         </li>
                                         <li class="mega-menu-column">
@@ -341,203 +430,164 @@
         </div>
     </header>
     <!--======== / Header ========-->
-        <!-- main-sec9 -->
-        <section class="main-sec9">
-            <!-- hero-style18 -->
-            <div class="hero-style18">
+
+        <!-- Main Infrastructure Hero Section -->
+        <section class="main-sec13">
+            <div class="hero-style18" style="background: radial-gradient(circle at top right, rgba(6, 6, 6, 0.08), transparent 20%);">
                 <div class="container">
                     <div class="hero-content18">
-                        <img src="assets/images/logo5.svg" alt="AI Agency & Technology HTML Template">
-                        <h1 class="title">Crafting Intelligent Content for
-                            a Dynamic Digital Future
-                        </h1>
-                        <p>Showcase successful case studies or client testimonials
-                            that demonstrate the effectiveness of your services
-                        </p>
+                        <img src="assets/images/ois-logo.png" width="340px" height="95px" style="object-fit: contain; margin-bottom: 20px;" alt="OIS Custom Branded System Logo">
+                        <h1 class="title text-gradient-cyan">Building, Securing, and Powering the Digital Future of Education</h1>
+                        <p style="color: var(--text-muted); max-width: 800px; margin: 0 auto 20px;">OIS is a CORTIA infrastructure service designed to help schools, universities, colleges, and educational institutions build, optimize, secure, and maintain a high-performance digital presence confidently.</p>
+                        <p style="color: #0b0a0a; font-weight: 500;">Continuous architecture engineering shielding institutional lifecycles.</p>
                         <div class="hero-btn18">
-                            <a class='ibt-btn ibt-btn-secondary' href='project-single.html' target='_blank'>
-                                <span>Discover</span>
+                            <a class='ibt-btn ibt-btn-secondary' href='contact.html'>
+                                <span>Deploy OIS Architecture</span>
                                 <i class="icon-arrow-top"></i>
                             </a>
                             <a href="#" class="video-popup" data-video="https://www.youtube.com/embed/aircAruvnKk">
-                                <i class="fa fa-play"></i> Watch Video
+                                <i class="fa fa-play"></i> Strategic Overview
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End hero-style18 -->
 
-            <!-- service-sec27 -->
+            <!-- Problem Context & Resolution Panel -->
             <div class="service-sec27">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 col-md-6">
-                            <div class="ser-card27">
-                                <h4 class="title">We provide the best services around the World</h4>
-                                <img src="assets/images/service/ser27-1.png" alt="AI Agency & Technology HTML Template">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-7 col-md-12">
+                            <div class="ser-card27 premium-glass-card" style="padding: 20px; overflow: hidden;">
+                                <!--<h4 class="title mb-3" style="color:#fff;">Operational Realities of Modern Institutional Systems</h4>-->
+                                <img src="assets/images/ois-infrastructure.png" width="100%" height="420px" style="object-fit: cover; border-radius: 12px;" alt="Custom Engineered Academic Interface Visualization">
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="col-xl-5 col-lg-5 col-md-12">
                             <div class="ser-card27_card3">
-                                <img src="assets/images/service/ser27-2.png" alt="AI Agency & Technology HTML Template">
-                                <div class="ser-content27">
-                                    <h4 class="title">AI Integration and Deployment</h4>
-                                    <p>Assist in seamlessly integrating AI solutions into your
-                                        existing systems and deploying them at scale.
-                                    </p>
+                                <img src="assets/images/ois-infrastructure.jpg" alt="Secure Infrastructure Icon">
                                 </div>
-                                <ul class="ser-link27">
-                                    <li><img src="assets/images/service/ser-link27-1.png" alt="AI Agency & Technology HTML Template"></li>
-                                    <li><img src="assets/images/service/ser-link27-2.png" alt="AI Agency & Technology HTML Template"></li>
-                                    <li><img src="assets/images/service/ser-link27-3.png" alt="AI Agency & Technology HTML Template"></li>
-                                    <li><img src="assets/images/service/ser-link27-4.png" alt="AI Agency & Technology HTML Template"></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End service-sec27 -->
         </section>
-        <!-- End main-sec9 -->
 
-        <!-- feature-sec16 -->
+        <!-- Brand Pillar Strategy Framework (Build. Protect. Optimize.) -->
         <section class="feature-sec16">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                <div class="sec-title text-center white">
+                    <span class="sub-title" style="color: var(--glow-cyan);">OIS Engine Architecture</span>
+                    <h2 class="title text-gradient-cyan">Build. Protect. Optimize.</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="feature-block16">
-                            <img src="assets/images/feature/fea16-1.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Start your project right</h4>
-                            <p>Pacific hake false trevally queen
-                                parrotfish moss prickleback
-                            </p>
+                            <div class="glow-icon-box"><i class="fas fa-layer-group fa-xl"></i></div>
+                            <h4 class="title" style="color:#fff;">BUILD</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">We cleanly architect and deploy custom institutional websites, operational registration systems, and student records portals configured for scaling operations.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="feature-block16">
-                            <img src="assets/images/feature/fea16-2.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">All in one application</h4>
-                            <p>Pacific hake false trevally queen
-                                parrotfish black prickle
-                            </p>
+                            <div class="glow-icon-box" style="background:rgba(102,187,106,0.05); border-color:rgba(102,187,106,0.2); color:#66bb6a;"><i class="fas fa-shield-halved fa-xl"></i></div>
+                            <h4 class="title" style="color:#fff;">PROTECT</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Continuous validation monitoring loops, advanced firewall logic layers, regular dependency updates, and off-site threat mitigations shielding core records.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="feature-block16">
-                            <img src="assets/images/feature/fea16-3.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Business Consultation</h4>
-                            <p>Queen parrotfish black prickle
-                                back moss
-                            </p>
+                            <div class="glow-icon-box" style="background:rgba(79,172,254,0.05); border-color:rgba(79,172,254,0.2); color:var(--glow-blue);"><i class="fas fa-chart-line fa-xl"></i></div>
+                            <h4 class="title" style="color:#fff;">OPTIMIZE</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Aggressive page load speed tuning, indexing engine optimization, clean routing logic paths, and rapid data access optimizations for fluid use.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End feature-sec16 -->
 
-        <!-- funfact-sec4 -->
-        <section class="funfact-sec4">
-            <div class="container">
-                <div class="funfact-content">
-                    <h4 class="title">Support all languages
-                        in the whole world
-                    </h4>
-                    <img src="assets/images/event/flag.png" alt="AI Agency & Technology HTML Template">
-                    <div class="funfact-count">
-                        <div class="counter-box11">
-                            <span class="counter-number" data-target="170">0</span>
-                            <span class="counter-text">+</span>
-                        </div>
-                        <span class="user">Languages</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End funfact-sec4 -->
-
-        <!-- marquee-sec -->
+        <!-- Dynamic Marquee Operational Matrix -->
         <section class="marquee-sec ibt-section-gap">
-            <h2 style="display:none;">Marquee Section</h2>
+            <h2 style="display:none;">System Marquee</h2>
             <div class="marquee v3">
-                <div class="marquee-inner">
-                    <span>/ Aiero enjoy your live action now for your busines</span>
-                    <span>/ Aiero enjoy your live action now for your busines</span>
+                 <div class="marquee-inner">
+                    <span>/ OIS Platform: Build. Protect. Optimize. Powering Institutional Infrastructure</span>
+                    <span>/ OIS Platform: Build. Protect. Optimize. Powering Institutional Infrastructure</span>
                 </div>
             </div>
         </section>
-        <!-- End marquee-sec -->
 
-        <!-- feature-sec14 -->
+        <!-- Managed Technical Architecture: The 10 Structural Pillars -->
         <section class="feature-sec14 v2 ibt-section-gap">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="feature-img14">
-                            <img src="assets/images/feature/feature14-1.png" alt="AI Agency & Technology HTML Template">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="sec-title white">
+                            <span class="sub-title" style="color: var(--glow-cyan);">Platform Core Capabilities</span>
+                            <h2 class="title text-gradient-cyan">10 Systems Engineering Pillars</h2>
+                            <p class="mt-3" style="color: var(--text-muted);">We permanently handle technical operations, configuration variables, software adjustments, and system scaling requirements.</p>
+                        </div>
+                        <div class="feature-img14 mt-4 premium-glass-card" style="padding: 10px;">
+                            <img src="assets/images/ois-server.jpg" style="border-radius: 12px; width: 100%; height: auto; object-fit: cover;" alt="High Uptime Enterprise Architecture Enclosure">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="feature-content12">
-                            <div class="sec-title white">
-                                <span class="sub-title">features</span>
-                                <h2 class="title animated-heading">Easy to integrate using our API access</h2>
-                            </div>
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Fine-tuning models</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Embedding models</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">InstructGPT</button>
-                                </li>
+                    <div class="col-lg-7">
+                        <div class="tab-content-wrapper">
+                            <ul class="nav nav-tabs border-0 mb-4" id="infrastructureTabs" role="tablist" style="gap:10px;">
+                                <li class="nav-item"><button class="nav-link active premium-glass-card px-3 py-2 text-white" id="p1-tab" data-bs-toggle="tab" data-bs-target="#p1" type="button" role="tab">1-3: Deployment & Defense</button></li>
+                                <li class="nav-item"><button class="nav-link premium-glass-card px-3 py-2 text-white" id="p2-tab" data-bs-toggle="tab" data-bs-target="#p2" type="button" role="tab">4-6: Performance & Cloud</button></li>
+                                <li class="nav-item"><button class="nav-link premium-glass-card px-3 py-2 text-white" id="p3-tab" data-bs-toggle="tab" data-bs-target="#p3" type="button" role="tab">7-10: Integration & Discovery</button></li>
                             </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <p>Triggerfish bluntnose knifefish upside-down catfish kfish convict
-                                        cichlid cat shark saw shark trout cod.
-                                    </p>
-                                    <p>Pacific hake false trevally queen parrotfish black prickleback
-                                        moss revally queen parrotfish black prickleback moss. Queen
-                                        parrotfish black prickleback moss pacific hake false trevally
-                                        queen parrotfish black prickleback moss revally
-                                    </p>
-                                    <a href="#" class="ibt-btn ibt-btn-outline-2">
-                                        <span>Explore more</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </a>
+                            <div class="tab-content" id="infrastructureTabsContent">
+                                <!-- Section Group 1 -->
+                                <div class="tab-pane fade show active" id="p1" role="tabpanel">
+                                    <div class="mb-4">
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-code text-info me-2"></i> 1. Institutional Design & Development</h6>
+                                        <p class="small text-muted pl-4">Engineering high-fidelity web ecosystems tailored for universities, research frameworks, and schools featuring responsive directories, course catalogs, and admission setups.</p>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-arrows-rotate text-info me-2"></i> 2. Continuous Systems Maintenance</h6>
+                                        <p class="small text-muted pl-4">Proactive software version increments, component patch management, content structure updates, database health cycles, and quick configuration changes.</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-user-shield text-info me-2"></i> 3. Continuous Cybersecurity Protection</h6>
+                                        <p class="small text-muted pl-4">Enforcing secure SSL/TLS arrays, edge firewalls, script injection prevention, data exfiltration blocks, and real-time endpoint threat mitigation.</p>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <p>Triggerfish bluntnose knifefish upside-down catfish kfish convict
-                                        cichlid cat shark saw shark trout cod.
-                                    </p>
-                                    <p>Pacific hake false trevally queen parrotfish black prickleback
-                                        moss revally queen parrotfish black prickleback moss. Queen
-                                        parrotfish black prickleback moss pacific hake false trevally
-                                        queen parrotfish black prickleback moss revally
-                                    </p>
-                                    <a href="#" class="ibt-btn ibt-btn-outline-2">
-                                        <span>Explore more</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </a>
+                                <!-- Section Group 2 -->
+                                <div class="tab-pane fade" id="p2" role="tabpanel">
+                                    <div class="mb-4">
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-bolt text-info me-2"></i> 4. Website Performance Optimization</h6>
+                                        <p class="small text-muted pl-4">Leveraging edge Content Delivery Networks (CDNs), optimized server caching layers, image compression matrix adjustments, and minimal response time targets.</p>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-cloud text-info me-2"></i> 5. Managed Cloud & Hosting Environments</h6>
+                                        <p class="small text-muted pl-4">Total administration over enterprise server resources, secure nameserver/DNS configurations, capacity tracking, and managed migrations.</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-database text-info me-2"></i> 6. Automated Backup & Disaster Recovery</h6>
+                                        <p class="small text-muted pl-4">Encrypted off-site database replication matrices configured for instant rollbacks and low recovery time objectives if an interruption happens.</p>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    <p>Triggerfish bluntnose knifefish upside-down catfish kfish convict
-                                        cichlid cat shark saw shark trout cod.
-                                    </p>
-                                    <p>Pacific hake false trevally queen parrotfish black prickleback
-                                        moss revally queen parrotfish black prickleback moss. Queen
-                                        parrotfish black prickleback moss pacific hake false trevally
-                                        queen parrotfish black prickleback moss revally
-                                    </p>
-                                    <a href="#" class="ibt-btn ibt-btn-outline-2">
-                                        <span>Explore more</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </a>
+                                <!-- Section Group 3 -->
+                                <div class="tab-pane fade" id="p3" role="tabpanel">
+                                    <div class="mb-3">
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-magnifying-glass text-info me-2"></i> 7. Search Architecture & Technical SEO</h6>
+                                        <p class="small text-muted pl-4">Structured semantic schema tagging, automated map indexing updates, and visibility tracking ensuring direct public findability.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-mobile-screen text-info me-2"></i> 8. Accessibility & Cross-Device UX</h6>
+                                        <p class="small text-muted pl-4">Strict responsive viewport layout styling optimized across legacy displays, tablets, smart mobile targets, and accessible web standards.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-network-wired text-info me-2"></i> 9. Enterprise Pipeline Integration</h6>
+                                        <p class="small text-muted pl-4">Connecting your frontend to Student Information Systems (SIS), Learning Systems (LMS), payment pathways, and libraries safely.</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white font-weight-bold mb-1"><i class="fas fa-headset text-info me-2"></i> 10. Dedicated Engineering Support</h6>
+                                        <p class="small text-muted pl-4">Direct system communication links bypass random freelance networks — giving you instant infrastructure engineer access when required.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -545,441 +595,227 @@
                 </div>
             </div>
         </section>
-        <!-- End feature-sec14 -->
 
-        <!-- feature-style17 -->
+        <!-- Institutional Domains & Demographics Served -->
         <section class="feature-sec17 ibt-section-gap">
             <div class="container">
-                <div class="sec-title white">
-                    <span class="sub-title">features</span>
-                    <h2 class="title animated-heading">The unique selling points & advantages of our service
-                    </h2>
+                <div class="sec-title white text-center mb-5">
+                    <span class="sub-title" style="color: var(--glow-cyan);">Target System Matrices</span>
+                    <h2 class="title text-gradient-cyan">Engineered Across the Educational Spectrum</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature1.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">AI Technology</h4>
-                            <p>Emphasize the expertise and knowledge of your
-                                team in developing and implementing neural
-                                networks
-                            </p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card15 premium-glass-card h-100 p-4">
+                            <i class="fas fa-university fa-2xl mb-3 text-info"></i>
+                            <h4 class="title text-white">Universities & Colleges</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">High-availability networks, institutional research index engines, independent department portals, and enterprise registry nodes.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature2.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Tailored solutions</h4>
-                            <p>Mention your ability to customize solutions
-                                based on specific business requirements
-                            </p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card15 premium-glass-card h-100 p-4">
+                            <i class="fas fa-graduation-cap fa-2xl mb-3 text-info"></i>
+                            <h4 class="title text-white">Polytechnics & Institutes</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Resource sharing arrays, secure operational infrastructure, and scalable communication routes built for modern applied technology tracks.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature3.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Cutting-edge technology</h4>
-                            <p>Highlight your use of the latest tools
-                                and techniques in neural network development
-                            </p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card15 premium-glass-card h-100 p-4">
+                            <i class="fas fa-school fa-2xl mb-3 text-info"></i>
+                            <h4 class="title text-white">Secondary & Primary Schools</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Clean, user-friendly frontend portals designed for efficient application processing, announcement rollouts, and parent interactions.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature4.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Modern development</h4>
-                            <p>Showcase successful case studies or client
-                                testimonials that demonstrate the effectiveness
-                                of your services
-                            </p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card15 premium-glass-card h-100 p-4">
+                            <i class="fas fa-atom fa-2xl mb-3 text-info"></i>
+                            <h4 class="title text-white">Research Institutions</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Document index arrays, technical asset preservation networks, and cross-platform institutional collaboration hubs.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature5.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">AI consultancy & strategy</h4>
-                            <p>Emphasize the expertise and knowledge of your
-                                team in developing and implementing neural
-                                networks
-                            </p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card15 premium-glass-card h-100 p-4">
+                            <i class="fas fa-building-columns fa-2xl mb-3 text-info"></i>
+                            <h4 class="title text-white">Educational Organizations</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Specialized custom administration hubs, regional office networks, and tailored programmatic application panels.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature6.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Computer vision</h4>
-                            <p>Mention your ability to customize
-                                solutions based on specific business
-                                requirements
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature7.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Deployment & Integration</h4>
-                            <p>Highlight your use of the latest tools
-                                and techniques in neural network
-                                development
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card15">
-                            <img src="assets/images/feature/feature8.svg" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Predictive analytics</h4>
-                            <p>Showcase successful case studies or client
-                                testimonials that demonstrate the effectiveness
-                                of your services
-                            </p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-card15 premium-glass-card h-100 p-4" style="background: linear-gradient(135deg, rgba(0,242,254,0.05), transparent) !important;">
+                            <i class="fas fa-network-wired fa-2xl mb-3 text-info"></i>
+                            <h4 class="title text-white">Unified Core Layers</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Bringing distributed network points, processing setups, databases, and client interactions into a unified ecosystem.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End feature-style17 -->
 
-        <!-- funfact-sec5 -->
+        <!-- System Performance Statistics Panel -->
         <section class="funfact-sec5">
             <div class="container3">
-                <div class="funfact-info5">
-                    <div class="funfact-content5">
-                        <div class="funfact-count5">
-                            <div class="counter-box17">
-                                <span class="counter-number" data-target="14">0</span>
-                                <span class="counter-text">k</span>
+                <div class="funfact-info5 premium-glass-card" style="padding: 60px 40px;">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="funfact-content5 justify-content-start">
+                                <div class="funfact-count5 m-0 me-4">
+                                    <div class="counter-box17"><span class="counter-number" data-target="99">0</span><span class="counter-text">.9%</span></div>
+                                    <span class="user3">Target Core Uptime</span>
+                                </div>
                             </div>
-                            <span class="user3">Active users</span>
                         </div>
-                        <div class="funfact-count5 v2">
-                            <div class="counter-box17">
-                                <span class="counter-number" data-target="49">0</span>
-                                <span class="counter-text">k</span>
-                            </div>
-                            <span class="user3">Downloads</span>
+                        <div class="col-lg-8">
+                            <h4 class="title text-white text-start m-0">Enterprise infrastructure architectures managed and secured across the CORTIA regional technology ecosystem.</h4>
                         </div>
                     </div>
-                    <h4 class="title">More than <span>15+ companies</span> use our platform</h4>
                 </div>
             </div>
         </section>
-        <!-- End funfact-sec5 -->
 
-        <!-- pricing-sec6 -->
-        <!--<section class="pricing-sec6 ibt-section-gap">
+        <!-- Comparative Structural Matrix Section -->
+        <section class="pricing-sec6 ibt-section-gap">
             <div class="container">
-                <div class="sec-title white">
-                    <span class="sub-title">pricing plans</span>
-                    <h2 class="title animated-heading">Choose a plan and start work with Aiero
-                    </h2>
+                <div class="sec-title text-center white mb-5">
+                    <span class="sub-title" style="color: var(--glow-cyan);">Operational Value Analysis</span>
+                    <h2 class="title text-gradient-cyan">The Institutional Infrastructure Matrix</h2>
                 </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="price-content3">
-                            <div class="price-card3">
-                                <div class="price-heade3">
-                                    <h4 class="title">Basic</h4>
-                                    <span>Great for private individuals</span>
-                                </div>
-                                <ul class="price-item2">
-                                    <li>1 User</li>
-                                    <li>Unlimited Projects</li>
-                                    <li>Download prototypes</li>
-                                    <li>1 Gb workspace</li>
-                                </ul>
-                                <div class="price-item-price3">
-                                    <h4 class="price">Free</h4>
-                                    <a href="#" class="ibt-btn ibt-btn-outline">
-                                        <span>Get started</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </a>
-                                </div>
+                <div class="row justify-content-center">
+                    <!-- Column Left: Legacy Risk State -->
+                    <div class="col-xl-5 col-lg-6 col-md-12 mb-4">
+                        <div class="premium-glass-card p-4 h-100" style="border-top: 4px solid #ef5350;">
+                            <h4 class="text-white font-weight-bold mb-4"><i class="fas fa-triangle-exclamation text-danger me-2"></i> Without OIS Managed Core</h4>
+                            <div class="matrix-pill-negative">
+                                <span class="text-white d-block small font-weight-bold">Legacy & Outdated Interfaces</span>
+                                <span class="text-muted xx-small">Diminishes user institutional confidence and hampers interaction efficiency.</span>
                             </div>
-                            <div class="price-img3">
-                                <img src="assets/images/layers/gradi.png" alt="AI Agency & Technology HTML Template">
+                            <div class="matrix-pill-negative">
+                                <span class="text-white d-block small font-weight-bold">Fragmented Security & Firewalls</span>
+                                <span class="text-muted xx-small">Leaves sensitive database layers exposed to cyberattacks and data breaches.</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="price-content3">
-                            <div class="price-card3 v2">
-                                <span class="Popular">Popular</span>
-                                <div class="price-heade3">
-                                    <h4 class="title">Premium</h4>
-                                    <span>14 days free period</span>
-                                </div>
-                                <ul class="price-item2">
-                                    <li>3 User</li>
-                                    <li>Unlimited Projects</li>
-                                    <li>Download prototypes</li>
-                                    <li>100 Gb workspace</li>
-                                </ul>
-                                <div class="price-item-price3">
-                                    <h4 class="price">$99<span>/mo</span></h4>
-                                    <a href="#!" class="ibt-btn ibt-btn-dark">
-                                        <span>Get started</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </a>
-                                </div>
+                            <div class="matrix-pill-negative">
+                                <span class="text-white d-block small font-weight-bold">Degraded & Slow Processing Speeds</span>
+                                <span class="text-muted xx-small">Frustrates student traffic, impacting submission timelines and digital processes.</span>
                             </div>
-                            <div class="price-img3">
-                                <img src="assets/images/layers/gradi2.png" alt="AI Agency & Technology HTML Template">
+                            <div class="matrix-pill-negative">
+                                <span class="text-white d-block small font-weight-bold">Irregular Maintenance Routines</span>
+                                <span class="text-muted xx-small">Relies on reactive patches that lead to cumulative technical dependencies.</span>
+                            </div>
+                            <div class="matrix-pill-negative">
+                                <span class="text-white d-block small font-weight-bold">Uncertain Manual Backup Operations</span>
+                                <span class="text-muted xx-small">Risks catastrophic loss of system records during critical data validation loops.</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="price-content3">
-                            <div class="price-card3 v3">
-                                <div class="price-heade3">
-                                    <h4 class="title">Unlimited</h4>
-                                    <span>Great for private individuals</span>
-                                </div>
-                                <ul class="price-item2">
-                                    <li>100 User</li>
-                                    <li>Unlimited Projects</li>
-                                    <li>Download prototypes</li>
-                                    <li>100 Gb workspace</li>
-                                </ul>
-                                <div class="price-item-price3">
-                                    <h4 class="price">$199<span>/mo</span></h4>
-                                    <a href="#" class="ibt-btn ibt-btn-outline">
-                                        <span>Get started</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </a>
-                                </div>
+                    <!-- Column Right: Optimized Target State -->
+                    <div class="col-xl-5 col-lg-6 col-md-12 mb-4">
+                        <div class="premium-glass-card p-4 h-100" style="border-top: 4px solid #66bb6a; background: linear-gradient(180deg, rgba(102,187,106,0.02), transparent) !important;">
+                            <h4 class="text-white font-weight-bold mb-4"><i class="fas fa-circle-check text-success me-2"></i> With OIS Managed Ecosystem</h4>
+                            <div class="matrix-pill-positive">
+                                <span class="text-white d-block small font-weight-bold">Professional Web Architecture</span>
+                                <span class="text-muted xx-small">Custom engineered layouts representing your brand accurately.</span>
                             </div>
-                            <div class="price-img3">
-                                <img src="assets/images/layers/gradi3.png" alt="AI Agency & Technology HTML Template">
+                            <div class="matrix-pill-positive">
+                                <span class="text-white d-block small font-weight-bold">Continuous Security Hardening</span>
+                                <span class="text-muted xx-small">Proactive encryption, threat detection loops, and monitored safety arrays.</span>
                             </div>
-                        </div>-->
+                            <div class="matrix-pill-positive">
+                                <span class="text-white d-block small font-weight-bold">System Performance Optimization</span>
+                                <span class="text-muted xx-small">Aggressive caching logic pipelines ensuring rapid content rendering times.</span>
+                            </div>
+                            <div class="matrix-pill-positive">
+                                <span class="text-white d-block small font-weight-bold">Continuous Core Maintenance Updates</span>
+                                <span class="text-muted xx-small">Managed plugin updates, code tuning, and immediate copy adjustments.</span>
+                            </div>
+                            <div class="matrix-pill-positive">
+                                <span class="text-white d-block small font-weight-bold">Automated Off-Site Backups</span>
+                                <span class="text-muted xx-small">Encrypted data syncing loops with rapid disaster recovery workflows.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End pricing-sec6 -->
 
-        <!-- testimonial-sec5 -->
+        <!-- Institutional Trust Proofing Section -->
         <section class="testimonial-sec5">
             <div class="container">
                 <div class="sec-title text-center white">
-                    <span class="sub-title">testimonials</span>
-                    <h2 class="title animated-heading">Hear what our customers say
-                        about our AI solutions
-                    </h2>
+                    <span class="sub-title" style="color: var(--glow-cyan);">User Feedback</span>
+                    <h2 class="title text-gradient-cyan">Voices From the Infrastructure Framework</h2>
                 </div>
             </div>
             <div class="swiper-wrapper-parent">
                 <div class="swiper testi-slide5">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Sam peters</h4>
-                                <span class="designation">Armani</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Bluntnose martines knifefish walk ahead twice catfish cobia
-                                    spookfish convict cichlid, "cat shark; saw shark trout cod."
-                                    Pacific hake false trevally queen parrotfish black.
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
+                            <div class="test-block5 premium-glass-card p-4 text-start">
+                                <h4 class="name text-white">Academic Registrar</h4>
+                                <span class="designation text-info">Regional University Network</span>
+                                <p class="text-muted small mt-2">"Migrating our portal nodes to the OIS architecture framework eliminated the recurrent database dropouts we faced during heavy student registration traffic windows."</p>
+                                <div class="custom-cursor">DRAG</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Anna Mitchel</h4>
-                                <span class="designation">SolarInc</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Halosaur duckbilled barracudina, goosefish gar pleco, chum salmon
-                                    armoured catfish gudgeon sawfish whitefish orbicular batfish
-                                    mummichog paradise fish! Triggerfish bango guppy opah sunfish
-                                    bluntnose.
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
+                            <div class="test-block5 premium-glass-card p-4 text-start">
+                                <h4 class="name text-white">Systems Administrator</h4>
+                                <span class="designation text-info">Polytechnic Institute</span>
+                                <p class="text-muted small mt-2">"Having specialized infrastructure engineering support from CORTIA let our team focus directly on delivering courses rather than handling hosting anomalies."</p>
+                                <div class="custom-cursor">DRAG</div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="test-block5 premium-glass-card p-4 text-start">
+                                <h4 class="name text-white">Academic Registrar</h4>
+                                <span class="designation text-info">Regional University Network</span>
+                                <p class="text-muted small mt-2">"Migrating our portal nodes to the OIS architecture framework eliminated the recurrent database dropouts we faced during heavy student registration traffic windows."</p>
+                                <div class="custom-cursor">DRAG</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Linda Dodge</h4>
-                                <span class="designation">Myltify</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Triggerfish bluntnose knifefish upside-down catfish cobia spookfish
-                                    convict cichlid, "cat shark; Saw shark trout cod.
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
+                            <div class="test-block5 premium-glass-card p-4 text-start">
+                                <h4 class="name text-white">Systems Administrator</h4>
+                                <span class="designation text-info">Polytechnic Institute</span>
+                                <p class="text-muted small mt-2">"Having specialized infrastructure engineering support from CORTIA let our team focus directly on delivering courses rather than handling hosting anomalies."</p>
+                                <div class="custom-cursor">DRAG</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Glan Peterson</h4>
-                                <span class="designation">GainTrust</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Saw shark trout cod, goosefish gar pleco, sawfish whitefish
-                                    orbicular batfish mummichog paradise fish! cobia spookfish
-                                    convict cichlid, "cat shark;
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Sam peters</h4>
-                                <span class="designation">Armani</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Bluntnose martines knifefish walk ahead twice catfish cobia
-                                    spookfish convict cichlid, "cat shark; saw shark trout cod."
-                                    Pacific hake false trevally queen parrotfish black.
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Anna Mitchel</h4>
-                                <span class="designation">SolarInc</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Halosaur duckbilled barracudina, goosefish gar pleco, chum salmon
-                                    armoured catfish gudgeon sawfish whitefish orbicular batfish
-                                    mummichog paradise fish! Triggerfish bango guppy opah sunfish
-                                    bluntnose.
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Linda Dodge</h4>
-                                <span class="designation">Myltify</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Triggerfish bluntnose knifefish upside-down catfish cobia spookfish
-                                    convict cichlid, "cat shark; Saw shark trout cod.
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="test-block5">
-                                <h4 class="name">Glan Peterson</h4>
-                                <span class="designation">GainTrust</span>
-                                <ul class="rating">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Saw shark trout cod, goosefish gar pleco, sawfish whitefish
-                                    orbicular batfish mummichog paradise fish! cobia spookfish
-                                    convict cichlid, "cat shark;
-                                </p>
-                                <div class="custom-cursor">D R A G</div>
+                            <div class="test-block5 premium-glass-card p-4 text-start">
+                                <h4 class="name text-white">Systems Administrator</h4>
+                                <span class="designation text-info">Polytechnic Institute</span>
+                                <p class="text-muted small mt-2">"Having specialized infrastructure engineering support from CORTIA let our team focus directly on delivering courses rather than handling hosting anomalies."</p>
+                                <div class="custom-cursor">DRAG</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End testimonial-sec5 -->
 
-        <!-- partners-sec -->
+        <!-- Technical Ecosystem Partners Network -->
         <section class="partners-sec ibt-section-gapTop">
-            <h2 style="display:none;">partner Section</h2>
+            <h2 style="display:none;">System Partners</h2>
             <div class="container">
-                <div class="brand-sec3">
+                <div class="brand-sec3 premium-glass-card py-4 px-2">
                     <div class="swiper brand2">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand1.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand2.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand3.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand4.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand6.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand5.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand1.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand2.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand3.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand4.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand6.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#"><img src="assets/images/brand/brand5.png" alt="AI Agency & Technology HTML Template"></a>
-                            </div>
+                            <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand1.png" alt="Framework Node Line"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand2.png" alt="Framework Node Line"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand3.png" alt="Framework Node Line"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="assets/images/brand/brand4.png" alt="Framework Node Line"></a></div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End partners-sec -->
 
-        <!-- footer-style4 -->
-        <footer class="footer-style4 v17">
+        <!-- System Footer Component -->
+        <footer class="footer-style4 v17" style="background: #060911;">
             <div class="footer-top4">
                 <div class="container">
                     <div class="footer-content4">
-                        <h2 class="title">Join Cortia and increase your productivity</h2>
-                        <a href="#" class="ibt-btn ibt-btn-outline-2">
-                            <span>Get a Quote</span>
+                        <h2 class="title text-gradient-cyan">Secure, streamline, and scale your institutional presence.</h2>
+                        <a href="contact.html" class="ibt-btn ibt-btn-outline-2">
+                            <span>Request Infrastructure Audit</span>
                             <i class="icon-arrow-top"></i>
                         </a>
                     </div>
@@ -991,40 +827,34 @@
                         <div class="col-lg-4">
                             <div class="about-widget4 footer-widget">
                                 <div class="footer-logo">
-                                    <img src="assets/images/logo2.svg" alt="AI Agency & Technology HTML Template">
+                                    <img src="assets/images/logo2.svg" alt="Cortia Unified Logo Mark">
                                 </div>
-                                <p><a href="#">©Cortia</a> 2025. All rights reserved.</p>
+                                <p class="small text-muted"><a href="#" class="text-white font-weight-bold">© Cortia Technologies</a> 2026. All rights reserved.</p>
                             </div>
                         </div>
                         <div class="col-lg-8">
                             <div class="footer-menu4">
                                 <div class="location-widget4 footer-widget">
-                                    <h4 class="widget-title">Location</h4>
-                                    <p>Aiero, USA, New York - 1060 Str. First Avenue 1</p>
-                                    <h5 class="title">Folow us</h5>
+                                    <h5 class="title text-white">Ecosystem Channels</h5>
                                     <ul class="social-icon">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="contact-widget4 footer-widget">
-                                    <h4 class="widget-title">Phone</h4>
-                                    <a href="tel:+13685678954" class="nmbr">+1 (368) 567 89 54 </a>
-                                    <a href="tel:8003508431" class="nmbr">+ 800 350 84 31</a>
-                                    <h5 class="widget-title">Email</h5>
-                                    <a href="mailto:support@aiero.com" class="gmail">support@aiero.com</a>
+                                    <h4 class="widget-title text-white">Direct Line</h4>
+                                    <a href="tel:+2347067526407" class="nmbr text-info">+234 706 752 6407</a>
+                                    <h5 class="widget-title text-white mt-3">Communications</h5>
+                                    <a href="mailto:cortiatechnology@gmail.com" class="gmail text-muted small">cortiatechnology@gmail.com</a>
                                 </div>
                                 <div class="footer-links footer-widget">
-                                    <h4 class="widget-title">Services</h4>
+                                    <h4 class="widget-title text-white">Cortia Stack</h4>
                                     <ul>
-                                        <li><a href='index.html'>Home</a></li>
-                                        <li><a href="#">Pages</a></li>
-                                        <li><a href='service.html'>Services</a></li>
-                                        <li><a href='blog.html'>Blog</a></li>
-                                        <li><a href='contact.html'>Contacts</a></li>
-                                        <li><a href='shop.html'>Shop</a></li>
+                                        <li><a href="index1.html" class="small text-muted">CoreSure</a></li>
+                                        <li><a href="index2.html" class="small text-muted">LandCerta</a></li>
+                                        <li><a href="index4.html" class="small text-muted">Rental Verify</a></li>
+                                        <li><a href="index5.html" class="small text-white font-weight-bold">OIS Platform</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1033,16 +863,14 @@
                 </div>
             </div>
         </footer>
-        <!-- footer-style4 -->
 
-        <!-- Scroll Button -->
-        <button id="scrollBtn" title="Go to top">
+        <!-- Scroll Anchor Node -->
+        <button id="scrollBtn" title="Return to Core Coordinate">
             <i class="fas fa-angle-up"></i>
         </button>
     </div>
 
-
-    <!-- Js Plugin -->
+    <!-- Plugin Script Arrays -->
     <script src="assets/js/bootstrap.min.js" defer></script>
     <script src="assets/js/vendor/swiper-bundle.min.js" defer></script>
     <script src="assets/js/vendor/lenis.min.js" defer></script>
@@ -1050,6 +878,5 @@
     <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </body>
-
 
 </html>
